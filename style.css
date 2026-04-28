@@ -620,6 +620,7 @@ ul {
   line-height: 1.85;
   color: var(--cream-mid);
   margin-bottom: 1.2rem;
+   text-align: justify;
 }
 
 .stats-grid {
