@@ -1,0 +1,887 @@
+<!doctype html>
+<html lang="az">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="KOMEDİXANA — Azərbaycanın ən sevimli komediya şousu. Xəzər TV-də hər şənbə-bazar 22:00-da."
+    />
+    <title>KOMEDİXANA — Rəsmi Sayt</title>
+    <link rel="icon" href="assets/logo/logo.jpg" type="image/jpeg" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- ==================== NAVBAR ==================== -->
+    <nav id="navbar">
+      <a href="#hero" class="nav-brand">
+        <img src="assets/logo/logo.jpg" alt="KOMEDİXANA Logo" />
+        <span class="nav-brand-name">KOMEDİXANA</span>
+      </a>
+
+      <ul class="nav-links">
+        <li><a href="#about" data-i18n="nav_about">Haqqında</a></li>
+        <li><a href="#episodes" data-i18n="nav_episodes">Bölümlər</a></li>
+        <li><a href="#cast" data-i18n="nav_cast">Heyət</a></li>
+        <li><a href="#ticket" data-i18n="nav_ticket">Bilet Al</a></li>
+        <li><a href="#sponsors" data-i18n="nav_sponsors">Sponsorlar</a></li>
+        <li><a href="#social" data-i18n="nav_social">Sosial</a></li>
+      </ul>
+
+      <div class="nav-right">
+        <div class="lang-pills">
+          <button class="lang-pill active" data-lang="az">AZ</button>
+          <button class="lang-pill" data-lang="ru">RU</button>
+          <button class="lang-pill" data-lang="en">EN</button>
+        </div>
+        <button class="hamburger" id="hamburgerBtn" aria-label="Menyu">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </nav>
+
+    <!-- mobile nav -->
+    <div class="mobile-nav" id="mobileNav">
+      <a href="#about" data-i18n="nav_about">Haqqında</a>
+      <a href="#episodes" data-i18n="nav_episodes">Bölümlər</a>
+      <a href="#cast" data-i18n="nav_cast">Heyət</a>
+      <a href="#ticket" data-i18n="nav_ticket">Bilet Al</a>
+      <a href="#sponsors" data-i18n="nav_sponsors">Sponsorlar</a>
+      <a href="#social" data-i18n="nav_social">Sosial</a>
+      <div
+        style="
+          display: flex;
+          gap: 8px;
+          padding: 12px 0;
+          border-top: 1px solid rgba(212, 160, 23, 0.15);
+          margin-top: 8px;
+        "
+      >
+        <button class="lang-pill active" data-lang="az">AZ</button>
+        <button class="lang-pill" data-lang="ru">RU</button>
+        <button class="lang-pill" data-lang="en">EN</button>
+      </div>
+    </div>
+
+    <!-- ==================== HERO ==================== -->
+    <section id="hero">
+      <div class="hero-texture"></div>
+
+      <!-- bulbs top -->
+      <div class="hero-bulbs-top">
+        <div class="bulb-strip">
+          <div class="bulb"></div>
+          <div class="bulb"></div>
+          <div class="bulb"></div>
+          <div class="bulb"></div>
+          <div class="bulb"></div>
+          <div class="bulb"></div>
+          <div class="bulb"></div>
+          <div class="bulb"></div>
+          <div class="bulb"></div>
+          <div class="bulb"></div>
+          <div class="bulb"></div>
+          <div class="bulb"></div>
+          <div class="bulb"></div>
+          <div class="bulb"></div>
+          <div class="bulb"></div>
+          <div class="bulb"></div>
+          <div class="bulb"></div>
+          <div class="bulb"></div>
+          <div class="bulb"></div>
+          <div class="bulb"></div>
+          <div class="bulb"></div>
+          <div class="bulb"></div>
+          <div class="bulb"></div>
+          <div class="bulb"></div>
+        </div>
+      </div>
+
+      <div class="hero-content">
+        <h1 class="hero-title">KOMEDİXANA</h1>
+        <p class="hero-subtitle" data-i18n="hero_sub">
+          Azərbaycanın Ən Sevimli Komediya Şousu
+        </p>
+
+        <div class="hero-badges">
+          <div class="hero-badge">
+            <div class="dot"></div>
+            <span data-i18n="badge_sat">Şənbə — 22:00</span>
+          </div>
+          <div class="hero-badge">
+            <div class="dot"></div>
+            <span data-i18n="badge_sun">Bazar — 22:00</span>
+          </div>
+          <div class="hero-badge">
+            <div class="dot"></div>
+            <span data-i18n="badge_tv">Xəzər TV</span>
+          </div>
+        </div>
+
+        <div class="hero-actions">
+          <a href="#episodes" class="btn btn-red"
+            >▶ <span data-i18n="btn_watch">İzlə</span></a
+          >
+          <a href="#ticket" class="btn btn-gold"
+            >🎟 <span data-i18n="btn_ticket">Bilet Al</span></a
+          >
+        </div>
+      </div>
+
+      <!-- bulbs bottom -->
+      <div class="hero-bulbs-bottom">
+        <div class="bulb-strip">
+          <div class="bulb"></div>
+          <div class="bulb"></div>
+          <div class="bulb"></div>
+          <div class="bulb"></div>
+          <div class="bulb"></div>
+          <div class="bulb"></div>
+          <div class="bulb"></div>
+          <div class="bulb"></div>
+          <div class="bulb"></div>
+          <div class="bulb"></div>
+          <div class="bulb"></div>
+          <div class="bulb"></div>
+          <div class="bulb"></div>
+          <div class="bulb"></div>
+          <div class="bulb"></div>
+          <div class="bulb"></div>
+          <div class="bulb"></div>
+          <div class="bulb"></div>
+          <div class="bulb"></div>
+          <div class="bulb"></div>
+          <div class="bulb"></div>
+          <div class="bulb"></div>
+          <div class="bulb"></div>
+          <div class="bulb"></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==================== TICKER ==================== -->
+    <div class="ticker">
+      <div class="ticker-track">
+        <span class="ticker-item">KOMEDİXANA<span class="sep">✦</span></span>
+        <span class="ticker-item">XƏZƏR TV<span class="sep">✦</span></span>
+        <span class="ticker-item"
+          >HƏR ŞƏNBƏ BAZAR 22:00<span class="sep">✦</span></span
+        >
+        <span class="ticker-item">KOMEDİXANA<span class="sep">✦</span></span>
+        <span class="ticker-item">XƏZƏR TV<span class="sep">✦</span></span>
+        <span class="ticker-item"
+          >HƏR ŞƏNBƏ BAZAR 22:00<span class="sep">✦</span></span
+        >
+        <span class="ticker-item">KOMEDİXANA<span class="sep">✦</span></span>
+        <span class="ticker-item">XƏZƏR TV<span class="sep">✦</span></span>
+        <span class="ticker-item"
+          >HƏR ŞƏNBƏ BAZAR 22:00<span class="sep">✦</span></span
+        >
+        <span class="ticker-item">KOMEDİXANA<span class="sep">✦</span></span>
+        <span class="ticker-item">XƏZƏR TV<span class="sep">✦</span></span>
+        <span class="ticker-item"
+          >HƏR ŞƏNBƏ BAZAR 22:00<span class="sep">✦</span></span
+        >
+      </div>
+    </div>
+
+    <!-- ==================== ABOUT ==================== -->
+    <section id="about" class="section-pad">
+      <div class="container">
+        <div class="about-grid">
+          <div class="about-text sr from-left">
+            <div class="tag" data-i18n="about_tag">Veriliş Haqqında</div>
+            <h2 class="section-title" data-i18n="about_title">
+              KOMEDİXANA nədir?
+            </h2>
+            <div class="divider"></div>
+            <p data-i18n="about_p1">
+              2019-cu ildən Xəzər TV-də yayımlanan KOMEDİXANA, Azərbaycanın ən
+              populyar komediya verilişlərindən biridir. Hər həftə milyonlarla
+              izləyici bu şounu həm televiziyada, həm də YouTube-da izləyir.
+            </p>
+            <p data-i18n="about_p2">
+              Veriliş yumoristik səhnəciklər, satirik monoloqlar və aktual
+              sosial mövzular üzərində qurulub. Teatr üslubunda hazırlanan hər
+              bölüm tamaşaçılara gülüş, enerji və müsbət düşüncə bəxş edir.
+            </p>
+            <br />
+            <a href="#episodes" class="btn btn-red"
+              >▶ <span data-i18n="btn_watch">İzlə</span></a
+            >
+          </div>
+
+          <div class="stats-grid sr from-right">
+            <div class="stat-box">
+              <span class="stat-num">2019</span>
+              <span class="stat-label" data-i18n="stat_since">İldən bəri</span>
+            </div>
+            <div class="stat-box">
+              <span class="stat-num">500+</span>
+              <span class="stat-label" data-i18n="stat_eps">Bölüm</span>
+            </div>
+            <div class="stat-box">
+              <span class="stat-num">10</span>
+              <span class="stat-label" data-i18n="stat_actors">Aktyor</span>
+            </div>
+            <div class="stat-box">
+              <span class="stat-num">2×</span>
+              <span class="stat-label" data-i18n="stat_weekly"
+                >Həftəlik yayım</span
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==================== EPISODES ==================== -->
+    <section id="episodes" class="section-pad">
+      <div class="container">
+        <div class="episodes-header">
+          <div>
+            <div class="tag sr" data-i18n="ep_tag">Son Bölümlər</div>
+            <h2 class="section-title sr" data-i18n="ep_title">Bu Həftə</h2>
+            <div class="divider sr"></div>
+          </div>
+        </div>
+
+        <div class="episodes-grid">
+          <div class="episode-card sr from-left">
+            <div class="episode-embed">
+              <iframe
+                src="https://www.youtube.com/embed/geb1g6veywk?si=6af77iX5lr0HIqN_"
+                title="KOMEDİXANA — Şənbə Bölümü"
+                allow="
+                  accelerometer;
+                  autoplay;
+                  clipboard-write;
+                  encrypted-media;
+                  gyroscope;
+                  picture-in-picture;
+                  web-share;
+                "
+                allowfullscreen
+              >
+              </iframe>
+            </div>
+            <div class="episode-meta">
+              <div class="episode-day" data-i18n="ep_sat">Şənbə Bölümü</div>
+              <div class="episode-name" data-i18n="ep_card_name">
+                KOMEDİXANA — Yeni Bölüm
+              </div>
+            </div>
+          </div>
+
+          <div class="episode-card sr from-right">
+            <div class="episode-embed">
+              <iframe
+                src="https://www.youtube.com/embed/DMHwlTljIMY?si=dVd8LGyIwDkybOal"
+                title="KOMEDİXANA — Bazar Bölümü"
+                allow="
+                  accelerometer;
+                  autoplay;
+                  clipboard-write;
+                  encrypted-media;
+                  gyroscope;
+                  picture-in-picture;
+                  web-share;
+                "
+                allowfullscreen
+              >
+              </iframe>
+            </div>
+            <div class="episode-meta">
+              <div class="episode-day" data-i18n="ep_sun">Bazar Bölümü</div>
+              <div class="episode-name" data-i18n="ep_card_name">
+                KOMEDİXANA — Yeni Bölüm
+              </div>
+            </div>
+          </div>
+        </div>
+        <div style="margin-top: 4rem">
+          <h3
+            style="
+              font-family: &quot;Playfair Display&quot;, serif;
+              color: var(--cream);
+              font-size: 1.6rem;
+              margin-bottom: 1.5rem;
+            "
+          >
+            Əvvəlki Bölümlər
+          </h3>
+          <div class="episodes-grid-single">
+            <div class="episode-card sr">
+              <div class="episode-embed">
+                <iframe
+                  src="https://www.youtube.com/embed/USmCue0WuRk?si=D_c_g_lzi6k1RWKW"
+                  title="Bölüm 520"
+                  allow="
+                    accelerometer;
+                    autoplay;
+                    clipboard-write;
+                    encrypted-media;
+                    gyroscope;
+                    picture-in-picture;
+                  "
+                  allowfullscreen
+                ></iframe>
+              </div>
+              <div class="episode-meta">
+                <div class="episode-day">Bölüm 520</div>
+                <div class="episode-name">Komedixana — Bölüm 520</div>
+              </div>
+            </div>
+            <div class="episode-card sr">
+              <div class="episode-embed">
+                <iframe
+                  width="560"
+                  height="315"
+                  src="https://www.youtube.com/embed/P2fZ90Ffeb4?si=hdBGpCJkNKlDX9jz"
+                  title="YouTube video player"
+                  frameborder="0"
+                  allow="
+                    accelerometer;
+                    autoplay;
+                    clipboard-write;
+                    encrypted-media;
+                    gyroscope;
+                    picture-in-picture;
+                    web-share;
+                  "
+                  referrerpolicy="strict-origin-when-cross-origin"
+                  allowfullscreen
+                ></iframe>
+              </div>
+              <div class="episode-meta">
+                <div class="episode-day">Bölüm 519</div>
+                <div class="episode-name">Komedixana — Bölüm 519</div>
+              </div>
+            </div>
+            <div class="episode-card sr">
+              <div class="episode-embed">
+                <iframe
+                  width="560"
+                  height="315"
+                  src="https://www.youtube.com/embed/fUnk740mI-k?si=1yAoHr0-cbOUGqYQ"
+                  title="YouTube video player"
+                  frameborder="0"
+                  allow="
+                    accelerometer;
+                    autoplay;
+                    clipboard-write;
+                    encrypted-media;
+                    gyroscope;
+                    picture-in-picture;
+                    web-share;
+                  "
+                  referrerpolicy="strict-origin-when-cross-origin"
+                  allowfullscreen
+                ></iframe>
+              </div>
+              <div class="episode-meta">
+                <div class="episode-day">Bölüm 518</div>
+                <div class="episode-name">Komedixana — Bölüm 518</div>
+              </div>
+            </div>
+            <div class="episode-card sr">
+              <div class="episode-embed">
+                <iframe
+                  width="560"
+                  height="315"
+                  src="https://www.youtube.com/embed/5BIRngQdSUM?si=4igyFmsrWHIXGK66"
+                  title="YouTube video player"
+                  frameborder="0"
+                  allow="
+                    accelerometer;
+                    autoplay;
+                    clipboard-write;
+                    encrypted-media;
+                    gyroscope;
+                    picture-in-picture;
+                    web-share;
+                  "
+                  referrerpolicy="strict-origin-when-cross-origin"
+                  allowfullscreen
+                ></iframe>
+              </div>
+              <div class="episode-meta">
+                <div class="episode-day">Bölüm 517</div>
+                <div class="episode-name">Komedixana — Bölüm 517</div>
+              </div>
+            </div>
+            <div class="episode-card sr">
+              <div class="episode-embed">
+                <iframe
+                  width="560"
+                  height="315"
+                  src="https://www.youtube.com/embed/NdVXkumsavg?si=NFG_DNUzs47bpZ83"
+                  title="YouTube video player"
+                  frameborder="0"
+                  allow="
+                    accelerometer;
+                    autoplay;
+                    clipboard-write;
+                    encrypted-media;
+                    gyroscope;
+                    picture-in-picture;
+                    web-share;
+                  "
+                  referrerpolicy="strict-origin-when-cross-origin"
+                  allowfullscreen
+                ></iframe>
+              </div>
+              <div class="episode-meta">
+                <div class="episode-day">Bölüm 516</div>
+                <div class="episode-name">Komedixana — Bölüm 516</div>
+              </div>
+            </div>
+            <div class="episode-card sr">
+              <div class="episode-embed">
+                <iframe
+                  width="560"
+                  height="315"
+                  src="https://www.youtube.com/embed/nMO4mi-ivNE?si=Z_g81aHVKb-nZL41"
+                  title="YouTube video player"
+                  frameborder="0"
+                  allow="
+                    accelerometer;
+                    autoplay;
+                    clipboard-write;
+                    encrypted-media;
+                    gyroscope;
+                    picture-in-picture;
+                    web-share;
+                  "
+                  referrerpolicy="strict-origin-when-cross-origin"
+                  allowfullscreen
+                ></iframe>
+              </div>
+              <div class="episode-meta">
+                <div class="episode-day">Bölüm 515</div>
+                <div class="episode-name">Komedixana — Bölüm 515</div>
+              </div>
+            </div>
+            <div class="episode-card sr">
+              <div class="episode-embed">
+                <iframe
+                  width="560"
+                  height="315"
+                  src="https://www.youtube.com/embed/3WHUIxD1-3M?si=7UDsPuSkd9I3pgUw"
+                  title="YouTube video player"
+                  frameborder="0"
+                  allow="
+                    accelerometer;
+                    autoplay;
+                    clipboard-write;
+                    encrypted-media;
+                    gyroscope;
+                    picture-in-picture;
+                    web-share;
+                  "
+                  referrerpolicy="strict-origin-when-cross-origin"
+                  allowfullscreen
+                ></iframe>
+              </div>
+              <div class="episode-meta">
+                <div class="episode-day">Bölüm 514</div>
+                <div class="episode-name">Komedixana — Bölüm 514</div>
+              </div>
+            </div>
+            <div class="episode-card sr">
+              <div class="episode-embed">
+                <iframe
+                  width="560"
+                  height="315"
+                  src="https://www.youtube.com/embed/tN4O1HvqW4o?si=Krc6q3hFBwPxgv1P"
+                  title="YouTube video player"
+                  frameborder="0"
+                  allow="
+                    accelerometer;
+                    autoplay;
+                    clipboard-write;
+                    encrypted-media;
+                    gyroscope;
+                    picture-in-picture;
+                    web-share;
+                  "
+                  referrerpolicy="strict-origin-when-cross-origin"
+                  allowfullscreen
+                ></iframe>
+              </div>
+              <div class="episode-meta">
+                <div class="episode-day">Bölüm 513</div>
+                <div class="episode-name">Komedixana — Bölüm 513</div>
+              </div>
+            </div>
+            <div class="episode-card sr">
+              <div class="episode-embed">
+                <iframe
+                  width="560"
+                  height="315"
+                  src="https://www.youtube.com/embed/IInb5m4gX0U?si=kRHx6bJDY0gcA-fR"
+                  title="YouTube video player"
+                  frameborder="0"
+                  allow="
+                    accelerometer;
+                    autoplay;
+                    clipboard-write;
+                    encrypted-media;
+                    gyroscope;
+                    picture-in-picture;
+                    web-share;
+                  "
+                  referrerpolicy="strict-origin-when-cross-origin"
+                  allowfullscreen
+                ></iframe>
+              </div>
+              <div class="episode-meta">
+                <div class="episode-day">Bölüm 512</div>
+                <div class="episode-name">Komedixana — Bölüm 512</div>
+              </div>
+            </div>
+            <div class="episode-card sr">
+              <div class="episode-embed">
+                <iframe
+                  width="560"
+                  height="315"
+                  src="https://www.youtube.com/embed/YWrSXju_DB0?si=CeSQsFZVrWzV9T47"
+                  title="YouTube video player"
+                  frameborder="0"
+                  allow="
+                    accelerometer;
+                    autoplay;
+                    clipboard-write;
+                    encrypted-media;
+                    gyroscope;
+                    picture-in-picture;
+                    web-share;
+                  "
+                  referrerpolicy="strict-origin-when-cross-origin"
+                  allowfullscreen
+                ></iframe>
+              </div>
+              <div class="episode-meta">
+                <div class="episode-day">Bölüm 511</div>
+                <div class="episode-name">Komedixana — Bölüm 511</div>
+              </div>
+            </div>
+
+            <!-- digər videolar buraya -->
+          </div>
+        </div>
+        <div class="all-videos-cta sr">
+          <a
+            href="https://www.youtube.com/@KOMEDİXANA"
+            target="_blank"
+            rel="noopener"
+            class="btn btn-gold"
+          >
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor">
+              <path
+                d="M23.5 6.2a3 3 0 0 0-2.1-2.1C19.5 3.5 12 3.5 12 3.5s-7.5 0-9.4.6A3 3 0 0 0 .5 6.2C0 8.1 0 12 0 12s0 3.9.5 5.8a3 3 0 0 0 2.1 2.1c1.9.5 9.4.5 9.4.5s7.5 0 9.4-.5a3 3 0 0 0 2.1-2.1C24 15.9 24 12 24 12s0-3.9-.5-5.8zM9.7 15.5V8.5l6.3 3.5-6.3 3.5z"
+              />
+            </svg>
+            <span data-i18n="ep_all">Bütün Bölümlərə Bax</span>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==================== CAST ==================== -->
+    <section id="cast" class="section-pad">
+      <div class="container">
+        <div style="text-align: center; margin-bottom: 3rem">
+          <div class="tag sr" data-i18n="cast_tag">Aktyor Heyəti</div>
+          <h2 class="section-title sr" data-i18n="cast_title">Ulduzlarımız</h2>
+          <div class="divider center sr"></div>
+        </div>
+
+        <!-- Built dynamically by script.js -->
+        <div class="cast-grid" id="castGrid"></div>
+      </div>
+    </section>
+
+    <!-- ==================== TICKET ==================== -->
+    <section id="ticket" class="section-pad">
+      <div class="container">
+        <div class="ticket-inner">
+          <div class="tag sr" data-i18n="ticket_tag">Canlı İzlə</div>
+          <h2 class="section-title sr" data-i18n="ticket_title">Bilet Al</h2>
+          <div class="divider center sr"></div>
+          <p
+            class="sr"
+            style="
+              color: var(--cream-mid);
+              font-size: 1rem;
+              max-width: 500px;
+              margin: 0 auto;
+            "
+            data-i18n="ticket_desc"
+          >
+            KOMEDİXANA çəkilişinə canlı tamaşaçı kimi qatılın! Aşağıdakı formanı
+            doldurun və biz sizinlə əlaqə saxlayaq.
+          </p>
+
+          <div class="ticket-card sr">
+            <form id="ticketForm" novalidate>
+              <div class="form-row">
+                <div class="form-group">
+                  <label for="formName" data-i18n="form_name">Ad Soyad</label>
+                  <input
+                    type="text"
+                    id="formName"
+                    placeholder="Adınız Soyadınız"
+                    required
+                  />
+                </div>
+                <div class="form-group">
+                  <label for="formPhone" data-i18n="form_phone"
+                    >Telefon Nömrəsi</label
+                  >
+                  <input
+                    type="tel"
+                    id="formPhone"
+                    placeholder="+994 XX XXX XX XX"
+                    required
+                  />
+                </div>
+              </div>
+
+              <div class="form-row">
+                <div class="form-group">
+                  <label for="formDate" data-i18n="form_date"
+                    >İstədiyiniz Tarix</label
+                  >
+                  <input type="date" id="formDate" required />
+                </div>
+                <div class="form-group">
+                  <label for="formCount" data-i18n="form_count"
+                    >Nəfər Sayı</label
+                  >
+                  <select id="formCount">
+                    <option value="1" data-i18n-opt="opt_1">1 nəfər</option>
+                    <option value="2" data-i18n-opt="opt_2">2 nəfər</option>
+                    <option value="3" data-i18n-opt="opt_3">3 nəfər</option>
+                    <option value="4" data-i18n-opt="opt_4">4 nəfər</option>
+                  </select>
+                </div>
+              </div>
+
+              <p class="form-location">
+                <span data-i18n="form_addr"
+                  >📍 Xəzər TV — Nobel prospekti 15, Bakı</span
+                >
+              </p>
+
+              <button type="submit" class="btn-submit" data-i18n="form_submit">
+                Müraciət Göndər
+              </button>
+            </form>
+
+            <div class="form-success" id="formSuccess" data-i18n="form_ok">
+              ✅ Müraciətiniz qəbul edildi! Tezliklə sizinlə əlaqə saxlanılacaq.
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==================== SPONSORS ==================== -->
+    <section id="sponsors" class="section-pad">
+      <div class="container">
+        <div class="sponsors-inner">
+          <div class="tag sr" data-i18n="sp_tag">Tərəfdaşlar</div>
+          <h2 class="section-title sr" data-i18n="sp_title">Sponsorlarımız</h2>
+          <div class="divider center sr"></div>
+
+          <!-- Main sponsors -->
+          <p class="tier-title sr" data-i18n="sp_main">Baş Sponsorlar</p>
+          <div class="sponsors-row">
+            <div class="sponsor-tile main-tier sr">
+              <img src="assets/sponsors/gardashlar.png" alt="Gardaşlar Mebel" />
+            </div>
+            <div
+              class="sponsor-tile main-tier sr"
+              style="transition-delay: 0.08s"
+            >
+              <img src="assets/sponsors/permolit.png" alt="Permolit Boya" />
+            </div>
+            <div
+              class="sponsor-tile main-tier sr"
+              style="transition-delay: 0.16s"
+            >
+              <img src="assets/sponsors/predo-baby.png" alt="Predo Baby" />
+            </div>
+          </div>
+
+          <!-- Other sponsors -->
+          <p class="tier-title sr" data-i18n="sp_other">Sponsorlar</p>
+          <div class="sponsors-row">
+            <div class="sponsor-tile sr">
+              <img src="assets/sponsors/quicks.png" alt="Quicks" />
+            </div>
+            <div class="sponsor-tile sr" style="transition-delay: 0.07s">
+              <img src="assets/sponsors/rosko.jpg" alt="RosKo" />
+            </div>
+            <div class="sponsor-tile sr" style="transition-delay: 0.14s">
+              <img src="assets/sponsors/chiko.png" alt="Çiko" />
+            </div>
+            <div class="sponsor-tile sr" style="transition-delay: 0.21s">
+              <img src="assets/sponsors/oba-market.png" alt="OBA Market" />
+            </div>
+            <div class="sponsor-tile sr" style="transition-delay: 0.28s">
+              <img src="assets/sponsors/hell-energy.png" alt="HELL Energy" />
+            </div>
+            <div class="sponsor-tile sr" style="transition-delay: 0.35s">
+              <span class="sponsor-text">ASC Co</span>
+            </div>
+            <div class="sponsor-tile sr" style="transition-delay: 0.42s">
+              <span class="sponsor-text">Alphachrom</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==================== SOCIAL ==================== -->
+    <section id="social" class="section-pad">
+      <div class="container">
+        <div style="text-align: center">
+          <div class="tag sr" data-i18n="soc_tag">Rəsmi Səhifələr</div>
+          <h2 class="section-title sr" data-i18n="soc_title">Bizi İzlə</h2>
+          <div class="divider center sr"></div>
+        </div>
+
+        <div class="social-row">
+          <a
+            href="https://www.youtube.com/@Komedixana"
+            target="_blank"
+            rel="noopener"
+            class="social-btn sr"
+          >
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="#FF0000">
+              <path
+                d="M23.5 6.2a3 3 0 0 0-2.1-2.1C19.5 3.5 12 3.5 12 3.5s-7.5 0-9.4.6A3 3 0 0 0 .5 6.2C0 8.1 0 12 0 12s0 3.9.5 5.8a3 3 0 0 0 2.1 2.1c1.9.5 9.4.5 9.4.5s7.5 0 9.4-.5a3 3 0 0 0 2.1-2.1C24 15.9 24 12 24 12s0-3.9-.5-5.8zM9.7 15.5V8.5l6.3 3.5-6.3 3.5z"
+              />
+            </svg>
+            YouTube — @Komedixana
+          </a>
+
+          <a
+            href="https://www.instagram.com/komedixana_official"
+            target="_blank"
+            rel="noopener"
+            class="social-btn sr"
+            style="transition-delay: 0.1s"
+          >
+            <svg width="22" height="22" viewBox="0 0 24 24">
+              <defs>
+                <linearGradient
+                  id="ig-grad"
+                  x1="0%"
+                  y1="100%"
+                  x2="100%"
+                  y2="0%"
+                >
+                  <stop offset="0%" stop-color="#f09433" />
+                  <stop offset="50%" stop-color="#dc2743" />
+                  <stop offset="100%" stop-color="#bc1888" />
+                </linearGradient>
+              </defs>
+              <path
+                fill="url(#ig-grad)"
+                d="M12 2.2c3.2 0 3.6 0 4.9.1 3.3.2 4.8 1.7 5 5 .1 1.3.1 1.6.1 4.8s0 3.5-.1 4.8c-.2 3.3-1.7 4.8-5 5-1.3.1-1.6.1-4.9.1s-3.5 0-4.8-.1c-3.3-.2-4.8-1.7-5-5C2 15.5 2 15.2 2 12s0-3.5.1-4.8c.2-3.3 1.7-4.8 5-5C8.4 2.2 8.8 2.2 12 2.2zm0-2.2C8.7 0 8.3 0 7.1.1 2.7.3.3 2.7.1 7.1 0 8.3 0 8.7 0 12s0 3.7.1 4.9C.3 21.3 2.7 23.7 7.1 23.9c1.2.1 1.6.1 4.9.1s3.7 0 4.9-.1c4.4-.2 6.8-2.6 7-7 .1-1.2.1-1.6.1-4.9s0-3.7-.1-4.9C23.7 2.7 21.3.3 16.9.1 15.7 0 15.3 0 12 0zm0 5.8a6.2 6.2 0 1 0 0 12.4A6.2 6.2 0 0 0 12 5.8zm0 10.2a4 4 0 1 1 0-8 4 4 0 0 1 0 8zm6.4-11.8a1.4 1.4 0 1 0 0 2.8 1.4 1.4 0 0 0 0-2.8z"
+              />
+            </svg>
+            Instagram — @komedixana_official
+          </a>
+
+          <a
+            href="https://www.xezertv.az"
+            target="_blank"
+            rel="noopener"
+            class="social-btn sr"
+            style="transition-delay: 0.2s"
+          >
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="var(--gold)">
+              <path
+                d="M21 3H3c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h18c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm-9 14-7-4.5V7.5L12 12l7-4.5V16.5L12 17z"
+              />
+            </svg>
+            Xəzər TV
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==================== FOOTER ==================== -->
+    <footer>
+      <span class="footer-logo">KOMEDİXANA</span>
+      <p class="footer-sub">XƏZƏR TV — 2019</p>
+      <nav class="footer-links">
+        <a href="#about" data-i18n="nav_about">Haqqında</a>
+        <a href="#episodes" data-i18n="nav_episodes">Bölümlər</a>
+        <a href="#cast" data-i18n="nav_cast">Heyət</a>
+        <a href="#ticket" data-i18n="nav_ticket">Bilet Al</a>
+        <a href="#sponsors" data-i18n="nav_sponsors">Sponsorlar</a>
+        <a href="#social" data-i18n="nav_social">Sosial</a>
+      </nav>
+      <p class="footer-copy" data-i18n="footer_copy">
+        © 2026 KOMEDİXANA. Bütün hüquqlar qorunur. Xəzər TV.
+      </p>
+      <p
+        style="
+          font-size: 0.72rem;
+          color: rgba(245, 237, 214, 0.18);
+          letter-spacing: 1px;
+          margin-top: 0.5rem;
+        "
+      >
+        Developed by
+        <a
+          href="https://www.elvineyvazov.shop"
+          target="_blank"
+          style="
+            color: var(--gold-dim);
+            text-decoration: none;
+            transition: color 0.3s;
+          "
+          onmouseover="this.style.color = 'var(--gold)'"
+          onmouseout="this.style.color = 'var(--gold-dim)'"
+          >Elvin Eyvazov</a
+        >
+      </p>
+    </footer>
+
+    <!-- ==================== ACTOR MODAL ==================== -->
+    <div class="modal-backdrop" id="actorModal" role="dialog" aria-modal="true">
+      <div class="modal">
+        <button class="modal-close" id="modalClose" aria-label="Bağla">
+          ✕
+        </button>
+        <img id="modalPhoto" class="modal-photo" src="" alt="" />
+        <h2 id="modalName" class="modal-name"></h2>
+        <p class="modal-role" id="modalRole">KOMEDİXANA Aktyoru</p>
+        <a
+          id="modalInstaLink"
+          href="#"
+          target="_blank"
+          rel="noopener"
+          class="modal-insta"
+        >
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor">
+            <path
+              d="M12 2.2c3.2 0 3.6 0 4.9.1 3.3.2 4.8 1.7 5 5 .1 1.3.1 1.6.1 4.8s0 3.5-.1 4.8c-.2 3.3-1.7 4.8-5 5-1.3.1-1.6.1-4.9.1s-3.5 0-4.8-.1c-3.3-.2-4.8-1.7-5-5C2 15.5 2 15.2 2 12s0-3.5.1-4.8c.2-3.3 1.7-4.8 5-5C8.4 2.2 8.8 2.2 12 2.2zm0-2.2C8.7 0 8.3 0 7.1.1 2.7.3.3 2.7.1 7.1 0 8.3 0 8.7 0 12s0 3.7.1 4.9C.3 21.3 2.7 23.7 7.1 23.9c1.2.1 1.6.1 4.9.1s3.7 0 4.9-.1c4.4-.2 6.8-2.6 7-7 .1-1.2.1-1.6.1-4.9s0-3.7-.1-4.9C23.7 2.7 21.3.3 16.9.1 15.7 0 15.3 0 12 0zm0 5.8a6.2 6.2 0 1 0 0 12.4A6.2 6.2 0 0 0 12 5.8zm0 10.2a4 4 0 1 1 0-8 4 4 0 0 1 0 8zm6.4-11.8a1.4 1.4 0 1 0 0 2.8 1.4 1.4 0 0 0 0-2.8z"
+            />
+          </svg>
+          <span id="modalInstaText">@instagram</span>
+        </a>
+
+        <div class="modal-cast-nav" id="modalCastNav"></div>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
