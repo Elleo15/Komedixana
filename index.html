@@ -235,79 +235,36 @@
       </div>
     </section>
 
-    <!-- ==================== EPISODES ==================== -->
-    <section id="episodes" class="section-pad">
-      <div class="container">
-        <div class="episodes-header">
-          <div>
-            <div class="tag sr" data-i18n="ep_tag">Son Bölümlər</div>
-            <h2 class="section-title sr" data-i18n="ep_title">Bu Həftə</h2>
-            <div class="divider sr"></div>
-          </div>
-        </div>
-
-        <div class="episodes-grid">
-          <div class="episode-card sr from-left">
-            <div class="episode-embed">
-              <iframe
-                src="https://www.youtube.com/embed/geb1g6veywk?si=6af77iX5lr0HIqN_"
-                title="KOMEDİXANA — Şənbə Bölümü"
-                allow="
-                  accelerometer;
-                  autoplay;
-                  clipboard-write;
-                  encrypted-media;
-                  gyroscope;
-                  picture-in-picture;
-                  web-share;
-                "
-                allowfullscreen
-              >
-              </iframe>
-            </div>
-            <div class="episode-meta">
-              <div class="episode-day" data-i18n="ep_sat">Şənbə Bölümü</div>
-              <div class="episode-name" data-i18n="ep_card_name">
-                KOMEDİXANA — Yeni Bölüm
-              </div>
-            </div>
-          </div>
-
-          <div class="episode-card sr from-right">
-            <div class="episode-embed">
-              <iframe
-                src="https://www.youtube.com/embed/DMHwlTljIMY?si=dVd8LGyIwDkybOal"
-                title="KOMEDİXANA — Bazar Bölümü"
-                allow="
-                  accelerometer;
-                  autoplay;
-                  clipboard-write;
-                  encrypted-media;
-                  gyroscope;
-                  picture-in-picture;
-                  web-share;
-                "
-                allowfullscreen
-              >
-              </iframe>
-            </div>
-            <div class="episode-meta">
-              <div class="episode-day" data-i18n="ep_sun">Bazar Bölümü</div>
-              <div class="episode-name" data-i18n="ep_card_name">
-                KOMEDİXANA — Yeni Bölüm
-              </div>
-            </div>
-          </div>
-        </div>
-        <div style="margin-top: 4rem">
-          <h3
-            style="
-              font-family: &quot;Playfair Display&quot;, serif;
-              color: var(--cream);
-              font-size: 1.6rem;
-              margin-bottom: 1.5rem;
-            "
-          >
+    <div class="episodes-grid">
+  <div class="episode-card sr from-left" id="saturdayCard">
+    <div class="episode-embed">
+      <iframe id="saturdayIframe"
+        src=""
+        title="KOMEDİXANA — Şənbə Bölümü"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share;"
+        allowfullscreen>
+      </iframe>
+    </div>
+    <div class="episode-meta">
+      <div class="episode-day" data-i18n="ep_sat">Şənbə Bölümü</div>
+      <div class="episode-name" id="saturdayName">KOMEDİXANA — Yeni Bölüm</div>
+    </div>
+  </div>
+  <div class="episode-card sr from-right" id="sundayCard">
+    <div class="episode-embed">
+      <iframe id="sundayIframe"
+        src=""
+        title="KOMEDİXANA — Bazar Bölümü"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share;"
+        allowfullscreen>
+      </iframe>
+    </div>
+    <div class="episode-meta">
+      <div class="episode-day" data-i18n="ep_sun">Bazar Bölümü</div>
+      <div class="episode-name" id="sundayName">KOMEDİXANA — Yeni Bölüm</div>
+    </div>
+  </div>
+</div>
             Əvvəlki Bölümlər
           </h3>
           <div class="episodes-grid-single">
