@@ -514,23 +514,33 @@ const YT_MAX       = 12;
 
 async function loadYoutubeVideos() {
   const grid = document.querySelector(".episodes-grid-single");
-  if (!grid) return;
-
-  grid.innerHTML = `<p style="color:var(--cream-mid);grid-column:1/-1;text-align:center">Yüklənir...</p>`;
 
   try {
-    const url = `https://www.googleapis.com/youtube/v3/search?key=${YT_API_KEY}&channelId=${YT_CHANNEL}&part=snippet&order=date&maxResults=${YT_MAX}&type=video`;
+    const url = `https://www.googleapis.com/youtube/v3/search?key=${YT_API_KEY}&channelId=${YT_CHANNEL}&part=snippet&order=date&maxResults=14&type=video`;
     const res  = await fetch(url);
     const data = await res.json();
 
-    if (!data.items || data.items.length === 0) {
-      grid.innerHTML = `<p style="color:var(--cream-mid);grid-column:1/-1;text-align:center">Video tapılmadı.</p>`;
-      return;
-    }
+    if (!data.items || data.items.length === 0) return;
 
+    // --- BU HƏFTƏ: son 2 video ---
+    const sunday  = data.items[0]; // ən yeni → Bazar
+    const saturday = data.items[1]; // ikinci   → Şənbə
+
+    const satIframe = document.getElementById("saturdayIframe");
+    const sunIframe = document.getElementById("sundayIframe");
+    const satName   = document.getElementById("saturdayName");
+    const sunName   = document.getElementById("sundayName");
+
+    if (satIframe) satIframe.src = `https://www.youtube.com/embed/${saturday.id.videoId}`;
+    if (sunIframe) sunIframe.src = `https://www.youtube.com/embed/${sunday.id.videoId}`;
+    if (satName)   satName.textContent = saturday.snippet.title;
+    if (sunName)   sunName.textContent = sunday.snippet.title;
+
+    // --- ƏVVƏLKİ BÖLÜMLƏR: qalan videolar ---
+    if (!grid) return;
     grid.innerHTML = "";
 
-    data.items.forEach((item, i) => {
+    data.items.slice(2).forEach((item, i) => {
       const videoId = item.id.videoId;
       const title   = item.snippet.title;
 
@@ -554,6 +564,17 @@ async function loadYoutubeVideos() {
       grid.appendChild(card);
     });
 
+    grid.querySelectorAll(".sr").forEach(el => {
+      const obs = new IntersectionObserver(entries => {
+        entries.forEach(e => { if (e.isIntersecting) { e.target.classList.add("visible"); obs.unobserve(e.target); } });
+      }, { threshold: 0.1 });
+      obs.observe(el);
+    });
+
+  } catch (err) {
+    console.error("YouTube API xətası:", err);
+  }
+}
     // yeni kartlara scroll reveal tətbiq et
     grid.querySelectorAll(".sr").forEach(el => {
       const obs = new IntersectionObserver(entries => {
