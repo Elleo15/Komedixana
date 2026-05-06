@@ -493,6 +493,7 @@ document.addEventListener("DOMContentLoaded", () => {
   buildCastGrid();
   initModal();
   initForm();
+  loadYoutubeVideos();
 
   // lang buttons
   document.querySelectorAll(".lang-pill").forEach((btn) => {
@@ -505,3 +506,64 @@ document.addEventListener("DOMContentLoaded", () => {
   // init scroll reveal after a tick (so elements are in DOM)
   requestAnimationFrame(() => initScrollReveal());
 });
+/* ---------- YOUTUBE API — OTOMATİK BÖLÜMLƏR ---------- */
+
+const YT_API_KEY   = "AIzaSyCExUlNWWdaUh5SVgfNHzOT9LY6ddHlbSg";
+const YT_CHANNEL   = "UCDy7cFjy7lpiHXwuy8zZxrg";
+const YT_MAX       = 12;
+
+async function loadYoutubeVideos() {
+  const grid = document.querySelector(".episodes-grid-single");
+  if (!grid) return;
+
+  grid.innerHTML = `<p style="color:var(--cream-mid);grid-column:1/-1;text-align:center">Yüklənir...</p>`;
+
+  try {
+    const url = `https://www.googleapis.com/youtube/v3/search?key=${YT_API_KEY}&channelId=${YT_CHANNEL}&part=snippet&order=date&maxResults=${YT_MAX}&type=video`;
+    const res  = await fetch(url);
+    const data = await res.json();
+
+    if (!data.items || data.items.length === 0) {
+      grid.innerHTML = `<p style="color:var(--cream-mid);grid-column:1/-1;text-align:center">Video tapılmadı.</p>`;
+      return;
+    }
+
+    grid.innerHTML = "";
+
+    data.items.forEach((item, i) => {
+      const videoId = item.id.videoId;
+      const title   = item.snippet.title;
+
+      const card = document.createElement("div");
+      card.className = "episode-card sr";
+      card.style.transitionDelay = `${i * 0.05}s`;
+      card.innerHTML = `
+        <div class="episode-embed">
+          <iframe
+            src="https://www.youtube.com/embed/${videoId}"
+            title="${title}"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen>
+          </iframe>
+        </div>
+        <div class="episode-meta">
+          <div class="episode-day">Yeni Bölüm</div>
+          <div class="episode-name">${title}</div>
+        </div>
+      `;
+      grid.appendChild(card);
+    });
+
+    // yeni kartlara scroll reveal tətbiq et
+    grid.querySelectorAll(".sr").forEach(el => {
+      const obs = new IntersectionObserver(entries => {
+        entries.forEach(e => { if (e.isIntersecting) { e.target.classList.add("visible"); obs.unobserve(e.target); } });
+      }, { threshold: 0.1 });
+      obs.observe(el);
+    });
+
+  } catch (err) {
+    console.error("YouTube API xətası:", err);
+    grid.innerHTML = `<p style="color:var(--cream-mid);grid-column:1/-1;text-align:center">Videolar yüklənmədi.</p>`;
+  }
+}
